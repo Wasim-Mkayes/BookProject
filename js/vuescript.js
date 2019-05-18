@@ -19,7 +19,6 @@ var app = new Vue({
         IdealFog: 0,
         CurrentSelfWorth: 0,
         IdealSelfWorth: 0,
-        NewRange: 0,
         CurrentHappiness: 0,
         IdealHappiness: 0,
         familyCheck: '',

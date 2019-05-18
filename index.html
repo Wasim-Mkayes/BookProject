@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/rangeslider.css">
   <link href="css/custom.css" rel="stylesheet">
+  
 
 
   <title>Book | Chapter 1 </title>
@@ -55,7 +57,7 @@
         <h2>Chapter 1 : Vulnerability</h2>
         <hr>
         <div class="col-md-12 text-center">
-          <iframe width="60%" height="315" src="https://www.youtube.com/embed/D8gz_phMyFM" frameborder="0"
+          <iframe width="60%" height="500" src="https://www.youtube.com/embed/D8gz_phMyFM" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <p>
@@ -121,7 +123,7 @@
           your current mindset and behavior.</p>
 
         <div class="col-md-12 text-center">
-          <iframe width="60%" height="315" src="https://www.youtube.com/embed/ROWLIUX5RAU" frameborder="0"
+          <iframe width="60%" height="500" src="https://www.youtube.com/embed/ROWLIUX5RAU" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br>
@@ -235,17 +237,15 @@
           driving your current eating behaviors. With it, you are primed to embrace a lifestyle that better
           reflects the real you.</p>
         <div class="col-md-12 text-center">
-          <iframe width="60%" height="315" src="https://www.youtube.com/embed/vNP8_5ITxKM" frameborder="0"
+          <iframe width="60%" height="500" src="https://www.youtube.com/embed/vNP8_5ITxKM" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
 
-
-
       <div class="col-md-10 worksheet" id="worksheet">
         <h2>Worksheet : Vulnerability</h2>
         <hr>
-        <form action="mailto:mix398@prdios.com" method="post" enctype="text/plain">
+        <form>
           <div class="row weightRange">
             <div class="col-md-5">
               <label for="CurrentWeight">Current weight range </label>
@@ -273,6 +273,7 @@
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentEnergy">
+              <span>{{CurrentEnergy}}</span>
             </div>
 
             <div class="col-md-2 text-center">
@@ -281,13 +282,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealEnergy">
-            </div>
+              <span>{{IdealEnergy}}</span></div>
           </div>
 
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentSelfImage">
-            </div>
+              <span>{{CurrentSelfImage}}</span> </div>
 
             <div class="col-md-2 text-center">
               <h5>Self-Image</h5>
@@ -295,14 +296,14 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealSelfImage">
-            </div>
+              <span>{{IdealSelfImage}}</span></div>
           </div>
 
           <!--2-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentSelfConfidence">
-            </div>
+              <span>{{CurrentSelfConfidence}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Self-confidence</h5>
@@ -310,13 +311,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealSelfConfidence">
-            </div>
+              <span>{{IdealSelfConfidence}}</span> </div>
           </div>
           <!--3-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentShame">
-            </div>
+              <span>{{CurrentShame}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Shame</h5>
@@ -324,13 +325,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealShame">
-            </div>
+              <span>{{IdealShame}}</span></div>
           </div>
           <!--4-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentControl">
-            </div>
+              <span>{{CurrentControl}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Feel in Control</h5>
@@ -338,13 +339,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealControl">
-            </div>
+              <span>{{IdealControl}}</span></div>
           </div>
           <!--5-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentMood">
-            </div>
+              <span>{{CurrentMood}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Mood</h5>
@@ -352,13 +353,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealMood">
-            </div>
+              <span>{{IdealMood}}</span></div>
           </div>
           <!--6-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentFog">
-            </div>
+              <span>{{CurrentFog}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Brain Fog</h5>
@@ -366,13 +367,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealFog">
-            </div>
+              <span>{{IdealFog}}</span></div>
           </div>
           <!--7-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentSelfWorth">
-            </div>
+              <span>{{CurrentSelfWorth}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Self Worth</h5>
@@ -380,13 +381,13 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealSelfWorth">
-            </div>
+              <span>{{IdealSelfWorth}}</span></div>
           </div>
           <!--8-->
           <div class="row">
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="CurrentHappiness">
-            </div>
+              <span>{{CurrentHappiness}}</span></div>
 
             <div class="col-md-2 text-center">
               <h5>Overall Happiness</h5>
@@ -394,7 +395,7 @@
 
             <div class="col-md-5 text-center">
               <input type="range" min="0" max="10" value="0" class="slider" v-model="IdealHappiness">
-            </div>
+              <span>{{IdealHappiness}}</span></div>
           </div>
 
           <div class="row">
@@ -407,20 +408,54 @@
               </h5>
             </div>
           </div>
-
+          
           <div class="row radioForm">
-            <div class="col-md-12 text-center" v-for="radio in radios">
+            <div class="col-md-12 text-center">
               <p class="radioLabel">
-                <span>{{radio.title}}</span> {{radio.label}}
+                <span>1) Family i.e. </span> Spouse / significant other / boyfriend / girlfriend/ kids
               </p>
               <div class="form-check form-check-inline" v-for="option in radiosOptions">
-                <label class="form-check-label radioLabelInp">
-                  <input type="radio" class="form-check-input form-radio" :name="radio.name" :v-model="radio.name"
-                    :value="option">
-                  {{option}}
-                </label>
-
+                  <label class="form-check-label radioLabelInp" >
+                      <input type="radio" class="form-check-input form-radio" name="familyCheck" 
+                      v-model="familyCheck" :value="option">
+                    {{option}}
+                  </label>
               </div>
+              
+              <p class="radioLabel">
+                  <span>2) Social Relationships i.e. </span> friends / peer groups / hobbies
+                </p>
+                <div class="form-check form-check-inline" v-for="option in radiosOptions">
+                    <label class="form-check-label radioLabelInp" >
+                        <input type="radio" class="form-check-input form-radio" name="socialCheck" 
+                        v-model="socialCheck" :value="option">
+                      {{option}}
+                    </label>
+                </div>
+
+                <p class="radioLabel">
+                    <span>3) Job </span> 
+                  </p>
+                  <div class="form-check form-check-inline" v-for="option in radiosOptions">
+                      <label class="form-check-label radioLabelInp" >
+                          <input type="radio" class="form-check-input form-radio" name="jobCheck" 
+                          v-model="jobCheck" :value="option">
+                        {{option}}
+                      </label>
+                  </div>
+
+                  <p class="radioLabel">
+                      <span>4) Love Life i.e. </span> intimacy, closeness w/ others
+                    </p>
+                    <div class="form-check form-check-inline" v-for="option in radiosOptions">
+                        <label class="form-check-label radioLabelInp" >
+                            <input type="radio" class="form-check-input form-radio" name="loveCheck" 
+                            v-model="loveCheck" :value="option">
+                          {{option}}
+                        </label>
+                    </div>
+
+
             </div>
           </div>
 
@@ -484,7 +519,7 @@
 
             <div class="col-md-6">
               <div class="QuotesOne form-check checkbutton">
-                <div v-for="(quote, index) in QuotesOne">
+                <div v-for="(quote, index) in QuotesOne" class="quotes">
                   <input type="checkbox" class="form-check-input form-radio" name="Quotes" :id="quote" :value="quote"
                     v-model="Quotes">
                   <label class="form-check-label" :for="quote">{{quote}}</label>
@@ -494,7 +529,7 @@
 
             <div class="col-md-6 divider">
               <div class="QuotesTwo form-check checkbutton">
-                <div v-for="(quote, index) in QuotesTwo">
+                <div v-for="(quote, index) in QuotesTwo" class="quotes">
                   <input type="checkbox" class="form-check-input form-radio" name="Quotes" :id="quote" :value="quote"
                     v-model="Quotes">
                   <label class="form-check-label" :for="quote">{{quote}}</label>
@@ -505,17 +540,136 @@
       <div class="row">
         <div class="col-md-12 text-center">
           <hr>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <button type="reset" class="btn btn-danger" value="submit" v-model="familyCheck">Reset</button>
+          <button type="submit" id="xportxls" class="btn btn-primary" onclick="doit('xlsx');">Submit</button>
+          <button type="reset" class="btn btn-danger" value="submit">Reset</button>
         </div>
       </div>
+
+      
       </form>
     </div>
   </div>
 
-  </div>
-  </div>
+  <table id="chapterTable" class="table">
+      <tr>
+        <th>Current Weight</th>
+        <th>Ideal Weight</th>
+      </tr>
+    <tr>
+      <td>{{CurrentWeight}}</td>
+      <td>{{IdealWeight}}</td>
+    </tr>
 
+    <tr>
+        <th>Current Energy</th>
+        <th>Ideal Energy</th>
+      </tr>
+    <tr>
+      <td>{{CurrentEnergy}}</td>
+      <td>{{IdealEnergy}}</td>
+    </tr>
+
+    <tr>
+        <th>Current Self Image</th>
+        <th>Ideal Self Image</th>
+      </tr>
+    <tr>
+      <td>{{CurrentSelfImage}}</td>
+      <td>{{IdealSelfImage}}</td>
+    </tr>
+    <tr>
+        <th>Current Self Confidence</th>
+        <th>Ideal Self Confidence</th>
+      </tr>
+    <tr>
+      <td>{{CurrentSelfConfidence}}</td>
+      <td>{{IdealSelfConfidence}}</td>
+    </tr>
+
+    <tr>
+        <th>Current Shame</th>
+        <th>Ideal Shame</th>
+      </tr>
+    <tr>
+      <td>{{CurrentShame}}</td>
+      <td>{{IdealShame}}</td>
+    </tr>
+    <tr>
+        <th>Current Control</th>
+        <th>Ideal Control</th>
+      </tr>
+    <tr>
+      <td>{{CurrentControl}}</td>
+      <td>{{IdealControl}}</td>
+    </tr>
+    <tr>
+        <th>Curren tMood</th>
+        <th>Ideal Mood</th>
+      </tr>
+    <tr>
+      <td>{{CurrentMood}}</td>
+      <td>{{IdealMood}}</td>
+    </tr>
+    <tr>
+        <th>Current Fog</th>
+        <th>Ideal Fog</th>
+      </tr>
+    <tr>
+      <td>{{CurrentFog}}</td>
+      <td>{{IdealFog}}</td>
+    </tr>
+    <tr>
+        <th>Current Self Worth</th>
+        <th>Ideal Self Worth</th>
+      </tr>
+    <tr>
+      <td>{{CurrentSelfWorth}}</td>
+      <td>{{IdealSelfWorth}}</td>
+    </tr>
+    <tr>
+        <th>Current Happiness</th>
+        <th>IdealHappiness</th>
+      </tr>
+    <tr>
+      <td>{{CurrentHappiness}}</td>
+      <td>{{IdealHappiness}}</td>
+    </tr>
+    
+    <tr>
+        <th>Family</th>
+        <th>Social Relationships</th>
+        <th>Job</th>
+        <th>Love Life</th>
+      </tr>
+    <tr>
+      <td>{{familyCheck}}</td>
+      <td>{{socialCheck}}</td>
+      <td>{{jobCheck}}</td>
+      <td>{{loveCheck}}</td>
+    </tr>
+
+      <tr>
+        <th>Vulnerability</th>
+      </tr>
+      <tr v-for="Chap in ChapterBoxes">
+        <td>{{Chap}}</td>
+      </tr>
+
+      <tr>
+          <th>Methods</th>
+        </tr>
+        <tr v-for="method in MethodBoxes">
+          <td>{{method}}</td>
+        </tr>
+
+        <th>Quotes</th>
+        </tr>
+        <tr v-for="quote in Quotes">
+          <td>{{quote}}</td>
+        </tr>
+  </table>
+ 
+  </div>
 </body>
 
 <script src="js/bootstrap.min.js"></script>
@@ -523,6 +677,27 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/vue.js"></script>
+<script src="js/rangeslider.min.js"></script>
 <script src="js/vuescript.js"></script>
+<script type="text/javascript" src="shim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+<script src="js/FileSaver.min.js"></script>
+ 
+<script>
+  var wb = XLSX.utils.table_to_book(document.getElementById('chapterTable'),{sheet:"Chapter1"});
+  
+  var wbout = XLSX.write(wb, {bookType:'xlsx', bookSST:true, type: 'binary'});
 
+  function s2ab(s) {
+              var buf = new ArrayBuffer(s.length);
+              var view = new Uint8Array(buf);
+              for (var i=0; i<s.length; i++) view[i] = s.charCodeAt(i) & 0xFF;
+              return buf;
+            }
+
+ $("#xportxls").click(function(){
+   console.log("must print");
+              saveAs(new Blob([s2ab(wbout)],{type:"application/octet-stream"}), 'CHapter1.xlsx');
+});
+</script>
 </html>

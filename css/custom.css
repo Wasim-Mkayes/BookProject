@@ -169,6 +169,7 @@ body {
 .worksheet label {
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .worksheet input[type=number] {
@@ -362,4 +363,33 @@ iframe {
 
 .weightRange label{
     margin-right: 10px;
+}
+
+.quotes{
+    margin-bottom: 50px;
+}
+
+.limits{
+    display: inline-flexbox;
+}
+
+input[type="range"] ~ span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #6B7A8F;
+    padding: 1px 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.table{
+    display:none;
+    text-align: center;
+}
+
+.table th,
+.table td{
+    border: none;
 }
