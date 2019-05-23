@@ -199,6 +199,10 @@ body {
 
 .slider:hover {
     opacity: 1;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .slider::-webkit-slider-thumb {
@@ -209,6 +213,10 @@ body {
     border-radius: 50%;
     background: #F7882F;
     cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .slider::-moz-range-thumb {
@@ -216,6 +224,10 @@ body {
     height: 25px;
     border-radius: 50%;
     background: #F7882F;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .worksheet .row {
@@ -259,13 +271,15 @@ body {
 }
 
 .btn {
-    margin: 0 30px;
+    margin: 0 15px;
 }
 
 iframe {
     box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     text-align: center;
     margin: 20px 0;
+    width: 60%;
+    height: 500px;
 }
 
 
@@ -276,6 +290,10 @@ iframe {
 .radioLabel {
     color: #F7882F;
     margin: 20px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .radioForm .radioLabelInp{
@@ -310,10 +328,18 @@ iframe {
 .form-radio:checked,
 .form-radio:hover {
     background-color: #F7882F;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .form-radio input:checked ~ .radioForm .radioLabelInp{ 
     color: #F7882F;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .checkbutton .form-radio {
@@ -351,11 +377,19 @@ iframe {
 }
 .checkbutton input:hover ~ label{
     color: #F7882F;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .checkbutton input:checked ~ label{
     color: #F7882F;
-    font-weight: 500;
+    font-weight: 400;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 .weightRange .form-control{
     display: inline-block;
@@ -385,11 +419,55 @@ input[type="range"] ~ span{
 }
 
 .table{
-    display:none;
+    display: none;
     text-align: center;
+    color: red;
 }
 
+.table th{
+    font-weight: 700;
+    background-color: #F7882F;
+}
 .table th,
 .table td{
     border: none;
+    text-align: center;
+}
+
+.sliderTitle{
+    color: #F7882F;
+}
+
+.sliderLabel{
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: none;
+    }
+
+    iframe{
+        height: 244px;
+        width: 70%;
+    }
+
+    .sliderLabel{
+        margin-top: 30px !important;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+    .divider {
+         border-left:none;
+         padding-left: 0px;
+    }
+    .radioForm .form-check-inline {
+        margin: 0 20px;
+    }
+
+    .ChapterBoxes {
+        margin: 10px 8px;
+    }
 }
